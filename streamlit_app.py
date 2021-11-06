@@ -13,7 +13,7 @@ recomm=pd.DataFrame({
   'title':['Открыли центр развития детей', 'Открыли спортивный центр'],
   'date':['20.11.2021', '22.11.2021']})
 
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3 = st.columns(3)
 
 col1.header("Введите id пользователя:")
 user_id = col1.number_input('', max_value=278, value=0)
