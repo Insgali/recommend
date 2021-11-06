@@ -12,4 +12,9 @@ hist=pd.DataFrame({
 st.header("History")
 st.write(hist)
 
-st.header("Recommendations")
+reccom=pd.DataFrame({
+  'id':[11,22],
+  'title':['Открыли центр развития детей', 'Открыли спортивный центр'],
+  'date':['20.11.2021', '22.11.2021']})
+st.header("History")
+st.write(reccom)
