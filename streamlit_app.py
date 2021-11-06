@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-id = st.number_input('Введите id пользователя:', value=1)
+st.header("Введите id пользователя:")
+id = st.number_input(value=1)
 st.write('The current id is ', id)
 
 hist=pd.DataFrame({
@@ -11,9 +12,9 @@ hist=pd.DataFrame({
 st.header("History")
 st.write(hist)
 
-recom=pd.DataFrame({
+recomm=pd.DataFrame({
   'id':[110,202],
   'title':['Открыли центр развития детей', 'Открыли спортивный центр'],
   'date':['20.11.2021', '22.11.2021']})
 st.header("Recommendations")
-st.write(recom)
+st.write(recomm)
