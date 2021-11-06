@@ -18,3 +18,11 @@ recomm=pd.DataFrame({
   'date':['20.11.2021', '22.11.2021']})
 st.header("Recommendations")
 st.write(recomm)
+
+col1, col2 = st.columns(2)
+
+col1.header('Hist')
+col1.write(hist)
+
+col2.header('Rec')
+col2.write(recomm)
