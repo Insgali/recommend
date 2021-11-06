@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(layout="wide")
+
 st.header("Введите id пользователя:")
 id = st.number_input('', max_value=278, value=0)
 st.write('Текущее id:', id)
-
-st.set_page_config(layout="wide")
 
 hist=pd.DataFrame({
   'id':[11,22,23],
