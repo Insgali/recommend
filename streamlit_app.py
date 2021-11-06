@@ -17,7 +17,8 @@ col1, col2 = st.columns(2)
 
 col1.header("Введите id пользователя:")
 user_id = col1.number_input('', max_value=278, value=0)
-col1.write('Текущее id:', user_id)
+col1.write('Текущее id:')
+col1.write(user_id)
 
 col1.header('History')
 col1.write(hist)
