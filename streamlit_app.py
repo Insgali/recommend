@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(layout="wide")
-
 st.header("Введите id пользователя:")
-id = st.number_input('', max_value=278, value=1)
-st.write('The current id is ', id)
+id = st.number_input('', max_value=278, value=0)
+st.write('Текущее id:', id)
+
+st.set_page_config(layout="wide")
 
 hist=pd.DataFrame({
   'id':[11,22,23],
@@ -19,8 +19,8 @@ recomm=pd.DataFrame({
 
 col1, col2 = st.columns(2)
 
-col1.header('Hist')
+col1.header('History')
 col1.write(hist)
 
-col2.header('Rec')
+col2.header('Recommendations')
 col2.write(recomm)
