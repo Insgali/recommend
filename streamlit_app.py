@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import pandas as pd
 
-id = st.number_input(step=1.)
+id = st.number_input('Введите id пользователя:', value=1)
 st.write('The current id is ', id)
 
 hist=pd.DataFrame({
